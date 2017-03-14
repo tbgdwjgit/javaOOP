@@ -19,12 +19,17 @@ public class CollectionTest {
         
         System.out.println(list1);
         System.out.println(list2);
-        
+        System.out.println(list1.addAll(list2));
+               
 //        list1.clear();
 //        System.out.println(list1);
         
 //        list1.removeAll(list2);
 //        System.out.println(list1);
+        
+        System.out.println(list1.containsAll(list2));
+        System.out.println(list1.toString());
+        
         
 //       Iterator<String> it=list1.iterator(); 
 //       while(it.hasNext()){
