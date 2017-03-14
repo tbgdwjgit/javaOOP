@@ -36,6 +36,9 @@ public class CollectionTest {
 		 System.out.println(iterator.next());		
 	   }
         
+       
+       
+       
 	}
 
 }
