@@ -31,7 +31,7 @@ public class CollectionTest {
 //    	 System.out.println(it.next());  
 //       }
        
-       //用这种较好
+       //用这种较好,没有多余对象产生
        for (Iterator<String> iterator = list2.iterator(); iterator.hasNext();) {
 		 System.out.println(iterator.next());		
 	   }
