@@ -40,25 +40,24 @@ public class CollectionTest {
 //		 System.out.println(iterator.next());		
 //	   }
         
-//       for (ListIterator<String> it = list2.listIterator(); it.hasNext();) {
-//    	 String str =it.next();
-//    	 if (str.equals("abc3")){
-//    	   list2.add("abc4"); 
-//    	 }
-//   		 //System.out.println(iterator.next());		
-//   	   }
-        
+       for (ListIterator<String> it = list2.listIterator(); it.hasNext();) {
+    	 Object str =it.next();
+    	 if (str.equals("abc3")){
+    	   it.add("abc4"); 
+    	 }
+   		 //System.out.println(iterator.next());		
+   	   }
+       System.out.println(list2); 
+       
 		// 获取列表迭代器
 		ListIterator<String> it=list2.listIterator();
 		
-		while(it.hasNext())
-		{
+		while(it.hasNext()){
 			Object obj=it.next();
-			if(obj.equals("abc2"))
-			{
+			if(obj.equals("abc2")){
 				it.add("hello");
 			}
-			System.out.println(obj);
+			//System.out.println(obj);
 		}
 		System.out.println(list2);      
        
