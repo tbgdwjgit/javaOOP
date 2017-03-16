@@ -71,20 +71,22 @@ public class CollectionTest {
         list2.add("abc2");        
         System.out.println(list2);
         
-		for(int i=0;i<list2.size()-1;i++){
-			for(int j=i+1;j<list2.size();j++){
-				if(list2.get(i).equals(list2.get(j))){
-					list2.remove(j);
-					j=j-1;
-				}
-				
-			}
-		}
-		System.out.println(list2); 
+//		for(int i=0;i<list2.size()-1;i++){
+//			for(int j=i+1;j<list2.size();j++){
+//				if(list2.get(i).equals(list2.get(j))){
+//					list2.remove(j);
+//					j=j-1;
+//				}
+//				
+//			}
+//		}
+//		System.out.println(list2); 
 
         List<String> tmpList = new ArrayList<String>();
         for (int i = 0; i < list2.size()-1; i++) {
-        	tmpList.contains(list2.get(i));
+        	if(!tmpList.contains(list2.get(i))){
+        		tmpList.add(list2.get(i));
+        	}
 		}
         System.out.println(tmpList); 
        
