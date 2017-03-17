@@ -97,10 +97,24 @@ public class CollectionTest {
         link.addFirst("2212");
         link.addFirst("2213");
         link.addFirst("2214");
+        System.out.println(link.toString());
         
-        System.out.println(link.removeLast());
-        System.out.println(link.removeLast());
-        System.out.println(link.removeLast());
+//        System.out.println(link.removeFirst());
+//        System.out.println(link.removeFirst());
+//        System.out.println(link.removeFirst());
+                
+//        System.out.println(link.removeLast());
+//        System.out.println(link.removeLast());
+//        System.out.println(link.removeLast());
+        
+        for (Iterator iterator = link.iterator(); iterator.hasNext();) {
+			String string = (String) iterator.next();
+			System.out.println(string);
+		}
+        
+        for (int i = link.size()-1; i >= 0; i--) {
+        	System.out.println(link.get(i));
+		}
         
 	}
 
