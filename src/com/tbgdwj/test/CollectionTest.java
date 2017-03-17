@@ -101,7 +101,7 @@ public class CollectionTest {
         System.out.println(link.removeLast());
         System.out.println(link.removeLast());
         System.out.println(link.removeLast());
-        
+        //≤‚ ‘
 	}
 
 }
