@@ -88,8 +88,20 @@ public class CollectionTest {
         		tmpList.add(list2.get(i));
         	}
 		}
-        System.out.println(tmpList); 
-       
+        //System.out.println(tmpList); 
+        list2.clear();
+        list2.addAll(tmpList);
+        System.out.println(list2);
+        
+        LinkedList<String> link =new LinkedList<String>(); 
+        link.addFirst("2212");
+        link.addFirst("2213");
+        link.addFirst("2214");
+        
+        System.out.println(link.removeLast());
+        System.out.println(link.removeLast());
+        System.out.println(link.removeLast());
+        
 	}
 
 }
