@@ -107,14 +107,51 @@ public class CollectionTest {
 //        System.out.println(link.removeLast());
 //        System.out.println(link.removeLast());
         
-        for (Iterator iterator = link.iterator(); iterator.hasNext();) {
-			String string = (String) iterator.next();
-			System.out.println(string);
+//        for (Iterator iterator = link.iterator(); iterator.hasNext();) {
+//			String string = (String) iterator.next();
+//			System.out.println(string);
+//		}
+        
+        //for (int i = link.size()-1; i >= 0; i--) {
+        while (!link.isEmpty()) {
+        	System.out.println(link.removeLast());
 		}
         
-        for (int i = link.size()-1; i >= 0; i--) {
-        	System.out.println(link.get(i));
+        //HashSet
+        HashSet<String> hs = new HashSet<String>();
+        hs.add("asas");
+        hs.add("q123");       
+        hs.add("as1as");        
+        hs.add("sdds");
+        hs.add("asas");
+        
+        for (Iterator<String> it = hs.iterator(); it.hasNext();) {
+			System.out.println(it.next());			
 		}
+        
+        //TreeSet
+        TreeSet<String> ts = new TreeSet<String>(); 
+        ts.add("1we");
+        ts.add("6eue");
+        ts.add("3fwf");
+        ts.add("5ers");
+        ts.add("wdd");
+        
+        for (Iterator it = ts.iterator(); it.hasNext();) {
+			System.out.println(it.next());
+			
+		}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 	}
 
