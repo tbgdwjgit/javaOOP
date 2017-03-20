@@ -1,4 +1,4 @@
-在Navicat下执行如下sql命令创建数据库mybatis和表t_user
+鍦∟avicat涓嬫墽琛屽涓媠ql鍛戒护鍒涘缓鏁版嵁搴搈ybatis鍜岃〃t_user
 [sql] 
 CREATE DATABASE IF NOT EXISTS mybatis;  
 [sql]
