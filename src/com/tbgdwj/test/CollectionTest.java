@@ -1,6 +1,7 @@
 package com.tbgdwj.test;
 
 import java.util.*;
+import com.tbgdwj.mybatis.User;
 
 public class CollectionTest {
 
@@ -35,7 +36,7 @@ public class CollectionTest {
 //    	 System.out.println(it.next());  
 //       }
        
-       //ÓÃÕâÖÖ½ÏºÃ,Ã»ÓÐ¶àÓà¶ÔÏó²úÉú
+       //ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ïºï¿½,Ã»ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //       for (Iterator<String> iterator = list2.iterator(); iterator.hasNext();) {
 //		 System.out.println(iterator.next());		
 //	   }
@@ -49,7 +50,7 @@ public class CollectionTest {
 //   	   }
 //       System.out.println(list2); 
 //       
-//		// »ñÈ¡ÁÐ±íµü´úÆ÷
+//		// ï¿½ï¿½È¡ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½
 //		ListIterator<String> it=list2.listIterator();
 //		
 //		while(it.hasNext()){
@@ -142,9 +143,17 @@ public class CollectionTest {
 			
 		}
         
-        
-        
-        
+        User user = new User("2112","12",20);
+//        TreeSet<User> ts1 = new TreeSet<User>();
+//        ts1.add(user);
+        Set<User> ts1 = new HashSet<User>();
+        ts1.add(user);        
+        ts1.add(user);
+        ts1.add(user);
+        for (Iterator it = ts1.iterator(); it.hasNext();) {
+			System.out.println(it.next());
+			
+		}
         
         
         
