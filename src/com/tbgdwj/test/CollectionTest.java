@@ -144,9 +144,9 @@ public class CollectionTest {
 		}
         
         User user = new User("2112","12",20);
-//        TreeSet<User> ts1 = new TreeSet<User>();
-//        ts1.add(user);
-        Set<User> ts1 = new HashSet<User>();
+        TreeSet<User> ts1 = new TreeSet<User>();
+        ts1.add(user);
+//        Set<User> ts1 = new HashSet<User>();
         ts1.add(user);        
         ts1.add(user);
         ts1.add(user);
