@@ -144,12 +144,15 @@ public class CollectionTest {
 		}
         
         User user = new User("2112","12",20);
+        User user1 = new User("2112","12",20);
         TreeSet<User> ts1 = new TreeSet<User>();
         ts1.add(user);
 //        Set<User> ts1 = new HashSet<User>();
         ts1.add(user);        
         ts1.add(user);
-        ts1.add(user);
+        ts1.add(user1);
+        ts1.add(user1);
+        ts1.add(user1);
         for (Iterator it = ts1.iterator(); it.hasNext();) {
 			System.out.println(it.next());
 			
