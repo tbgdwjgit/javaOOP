@@ -158,10 +158,24 @@ public class CollectionTest {
 			
 		}
         
-        //
-        System.out.println("123");
-        
-        
+		//字符排序
+        Set<String> strSet1 = new TreeSet<String>(new TestComparatorStr());//长度          
+        Set<String> strSet = new TreeSet<String>();//自然顺序
+//        strSet.add("dfdffd");
+//        strSet.add("feed");
+//        strSet.add("ewd");
+//        strSet.add("cdee");
+//        
+//        for(String str:strSet){
+//        	System.out.println(str);
+//        }
+        strSet1.add("dfdffd");
+        strSet1.add("feed");
+        strSet1.add("ewd");
+        strSet1.add("cdee");
+        for(String str:strSet1){
+        	System.out.println(str);
+        }        
         
         
         
@@ -172,5 +186,7 @@ public class CollectionTest {
         
         
 	}
+
+
 
 }
