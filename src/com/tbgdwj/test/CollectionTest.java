@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import com.tbgdwj.mybatis.User;
@@ -188,11 +189,23 @@ public class CollectionTest {
         
         Map<String,String> map = new HashMap<String,String>();
         
-        map.put("1", "twx");
+        System.out.println(map.put("1", "twx"));
+        System.out.println(map.put("1", "twx1"));
         map.put("2", "twx1");
         map.put("3", "twx2");
         System.out.println(map);
         
+        Map<String,String> map1 = new TreeMap<String,String>();
+        map1.put("1", "twx1");
+        map1.put("2", "twx2");
+        map1.put("3", "twx1");
+        map1.put("4", "twx2");
+        System.out.println(map1);
+        
+        System.out.println(map1.get("1"));
+        Set<String> kset =map1.keySet();
+        for(String str:kset)
+        	System.out.println(str);
         
 	}
 
