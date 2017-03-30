@@ -1,6 +1,15 @@
 package com.tbgdwj.test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
 import com.tbgdwj.mybatis.User;
 
 public class CollectionTest {
@@ -177,12 +186,12 @@ public class CollectionTest {
         	System.out.println(str);
         }        
         
+        Map<String,String> map = new HashMap<String,String>();
         
-        
-        
-        
-        
-        
+        map.put("1", "twx");
+        map.put("2", "twx1");
+        map.put("3", "twx2");
+        System.out.println(map);
         
         
 	}
