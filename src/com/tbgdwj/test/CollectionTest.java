@@ -204,8 +204,11 @@ public class CollectionTest {
         
         System.out.println(map1.get("1"));
         Set<String> kset =map1.keySet();
-        for(String str:kset)
-        	System.out.println(str);
+        for(String str:kset){
+           	String value=map1.get(str);
+           	System.out.println(str+":"+value);        	
+        }
+
         
 	}
 
