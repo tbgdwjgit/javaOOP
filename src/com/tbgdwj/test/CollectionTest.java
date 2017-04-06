@@ -46,7 +46,7 @@ public class CollectionTest {
 //    	 System.out.println(it.next());  
 //       }
        
-       //�����ֽϺ�,û�ж���������
+       //
 //       for (Iterator<String> iterator = list2.iterator(); iterator.hasNext();) {
 //		 System.out.println(iterator.next());		
 //	   }
@@ -209,6 +209,15 @@ public class CollectionTest {
            	System.out.println(str+":"+value);        	
         }
 
+        //System
+        System.out.println(System.getProperties());
+        System.out.println(System.getProperty("java.library.path"));
+        System.out.println(System.nanoTime());
+        //Runtime
+        
+        //Math
+     
+        
         
 	}
 
