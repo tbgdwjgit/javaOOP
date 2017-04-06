@@ -1,5 +1,6 @@
 package com.tbgdwj.test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,7 +16,7 @@ import com.tbgdwj.mybatis.User;
 
 public class CollectionTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
         List<String> list1 =new ArrayList<String>();
         List<String> list2 =new ArrayList<String>();
@@ -214,10 +215,17 @@ public class CollectionTest {
         System.out.println(System.getProperty("java.library.path"));
         System.out.println(System.nanoTime());
         //Runtime
+        Runtime rt =Runtime.getRuntime();
+        //rt.exec("notepad.exe");
+        rt.exec("calc.exe");
         
         //Math
-     
-        
+        System.out.println(Math.E);
+        System.out.println(Math.PI);
+        System.out.println(Math.ceil(2.33));
+        System.out.println(Math.rint(2.33));
+        System.out.println(Math.round(2.3322323));
+        System.out.println(Math.random());
         
 	}
 
