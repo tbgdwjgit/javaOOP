@@ -2,12 +2,14 @@ package com.tbgdwj.test;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -214,10 +216,11 @@ public class CollectionTest {
         System.out.println(System.getProperties());
         System.out.println(System.getProperty("java.library.path"));
         System.out.println(System.nanoTime());
+        
         //Runtime
         Runtime rt =Runtime.getRuntime();
         //rt.exec("notepad.exe");
-        rt.exec("calc.exe");
+//        rt.exec("calc.exe");
         
         //Math
         System.out.println(Math.E);
@@ -226,6 +229,17 @@ public class CollectionTest {
         System.out.println(Math.rint(2.33));
         System.out.println(Math.round(2.3322323));
         System.out.println(Math.random());
+        System.out.println("================================");
+        //java.util.Random
+//        Random random = new Random(2);
+//        System.out.println(random.nextInt());
+        
+        //Date
+        
+        
+        //Calendar
+        Calendar c = Calendar.getInstance();
+        System.out.println(c.YEAR);
         
 	}
 
