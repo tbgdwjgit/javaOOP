@@ -31,7 +31,12 @@ public class CalculatorTest {
      *“在任何一个测试执行之前必须执行的代码”就是一个Fixture，我们用@Before来标注它， 
      *这里不在需要@Test标注，因为这不是一个test，而是一个Fixture。
      *同理，如果“在任何测试执行之后需要进行的收尾工作”也是一个Fixture，
-     *使用@After来标注。由于本例比较简单，没有用到此功能。 
+     *使用@After来标注。由于本例比较简单，没有用到此功能。
+     *
+     * 
+     *每个测试类只能有一个方法被标注为 @BeforeClass 或 @AfterClass ，
+     *并且该方法必须是 Public 和 Static 的 。
+     * 
      */
     @Before
     public void setUp() throws Exception {
