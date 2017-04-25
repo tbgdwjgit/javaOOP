@@ -9,6 +9,8 @@ package javaTest;
  * 前面的类名就可以省略了，使用起来更加的方便。
  */
 import static org.junit.Assert.*;
+
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -22,6 +24,12 @@ public class CalculatorTest {
     private static Calculator calculator = new Calculator();
 
     //“标注”也是JDK5的一个新特性
+    /**
+     *“在任何一个测试执行之前必须执行的代码”就是一个Fixture，我们用@Before来标注它， 
+     *这里不在需要@Test标注，因为这不是一个test，而是一个Fixture。
+     *同理，如果“在任何测试执行之后需要进行的收尾工作”也是一个Fixture，
+     *使用@After来标注。由于本例比较简单，没有用到此功能。 
+     */
     @Before
     public void setUp() throws Exception {
         calculator.clear();
@@ -50,11 +58,10 @@ public class CalculatorTest {
         assertEquals(8, calculator.getResult());
     }
     
-    /*
+    /**
      * 在这种测试函数的前面加上@Ignore标注，这个标注的含义就是“某些方法尚未完成，
      * 暂不参与此次测试”。这样的话测试结果就会提示你有几个测试被忽略，而不是失败。
-     * 一旦你完成了相应函数，只需要把@Ignore标注删去，就可以进行正常的测试。
-     * 
+     * 一旦你完成了相应函数，只需要把@Ignore标注删去，就可以进行正常的测试。 
      */    
     @Ignore("Multiply() Not yet implemented")
     @Test
@@ -68,4 +75,9 @@ public class CalculatorTest {
         assertEquals(4, calculator.getResult());
     }
 
+    @After
+    public void setDown() throws Exception {
+        System.out.println("123");
+    }
+    
 }
