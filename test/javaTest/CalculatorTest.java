@@ -16,7 +16,10 @@ import org.junit.Ignore;
 import org.junit.Test;
 import com.tbgdwj.test.Calculator;
 
-
+/**
+ *我们的测试类是一个独立的类，没有任何父类。测试类的名字也可以任意命名，没有任何局限性。
+ *所以我们不能通过类的声明来判断它是不是一个测试类，它与普通类的区别在于它内部的方法的声明。 
+ */
 public class CalculatorTest {
 	/**
 	 * 你要测试哪个类，那么你首先就要创建一个该类的对象。
