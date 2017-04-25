@@ -51,8 +51,16 @@ public class CalculatorTest {
      * 
      * 判断期待结果和实际结果是否相等，第一个参数填写期待结果，第二个参数填写实际结果，
      * 也就是通过计算得到的结果。这样写好之后，JUnit会自动进行测试并把测试结果反馈给用户。
+     * 
+     * 限时测试。
+     *  @Test(timeout  =   1000 ) Timeout 参数表明了你要设定的时间，单位为毫秒，因此 1000 就代表 1 秒。
+     *
+     * 测试异常
+     *  @Test(expected  =  ArithmeticException. class )
+     *
+     *
      */
-    @Test
+    @Test (timeout = 1)
     public void testAdd() {
         calculator.add(2);
         calculator.add(3);
