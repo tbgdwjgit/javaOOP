@@ -13,8 +13,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-
-import com.tbgdwj.mybatis.User;
+//com.tbgdwj.mybatis.User;
 
 public class CollectionTest {
 
@@ -156,20 +155,20 @@ public class CollectionTest {
 			
 		}
         
-        User user = new User("2112","12",20);
-        User user1 = new User("2112","12",20);
-        TreeSet<User> ts1 = new TreeSet<User>();
-        ts1.add(user);
-//        Set<User> ts1 = new HashSet<User>();
-        ts1.add(user);        
-        ts1.add(user);
-        ts1.add(user1);
-        ts1.add(user1);
-        ts1.add(user1);
-        for (Iterator it = ts1.iterator(); it.hasNext();) {
-			System.out.println(it.next());
-			
-		}
+//        User user = new User("2112","12",20);
+//        User user1 = new User("2112","12",20);
+//        TreeSet<User> ts1 = new TreeSet<User>();
+//        ts1.add(user);
+////        Set<User> ts1 = new HashSet<User>();
+//        ts1.add(user);        
+//        ts1.add(user);
+//        ts1.add(user1);
+//        ts1.add(user1);
+//        ts1.add(user1);
+//        for (Iterator it = ts1.iterator(); it.hasNext();) {
+//			System.out.println(it.next());
+//			
+//		}
         
 		//字符排序
         Set<String> strSet1 = new TreeSet<String>(new TestComparatorStr());//长度          

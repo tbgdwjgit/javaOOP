@@ -1,0 +1,6 @@
+高版本JDK换成低版本JDK报错Unsupported major.minor version 52.0
+java.lang.UnsupportedClassVersionError: PR/Sort : Unsupported major.minor version 52.0
+这个错误是由于高版本的java project使用了低版本的来运行。
+
+解决方法：
+在Properties-->JAVA Compiler-中的Compiler compliance level从1.8改成1.7，之后就可以运行了。
